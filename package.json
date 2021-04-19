@@ -1,0 +1,34 @@
+{
+  "name": "working-timer",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:leobastiani/working-timer.git",
+  "author": "Leonardo Guarnieri de Bastiani <leogbastiani@gmail.com>",
+  "license": "MIT",
+  "bin": "./dist/index.js",
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "dayjs": "^1.10.4",
+    "ink": "^3.0.8",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "zustand": "^3.4.1"
+  },
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "clean": "rimraf dist",
+    "build": "yarn clean && babel src -d dist",
+    "dev": "nodemon --exec yarn start",
+    "postinstall": "yarn build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.15",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2"
+  }
+}
