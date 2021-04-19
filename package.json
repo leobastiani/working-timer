@@ -18,8 +18,7 @@
     "start": "babel-node src/index.js",
     "clean": "rimraf dist",
     "build": "yarn clean && babel src -d dist",
-    "dev": "nodemon --exec yarn start",
-    "postinstall": "yarn build"
+    "dev": "nodemon --exec yarn start"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
